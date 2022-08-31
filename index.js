@@ -20,6 +20,12 @@ Do the following:
    HINT: no function required
 */
 
+const votingAge = 18;
+if (votingAge => 18) {
+  console.log(True)
+} else {
+  console.log(False)
+}
 
 
 /*
