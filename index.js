@@ -21,10 +21,10 @@ Do the following:
 */
 
 const votingAge = 18;
-if (votingAge => 18) {
-  console.log(True)
+if (votingAge <= 16) {
+  console.log(true)
 } else {
-  console.log(False)
+  console.log(false)
 }
 
 
@@ -39,7 +39,11 @@ Do the following:
 
    HINT: no function required
 */
+let firstThing = 12;
+let secondThing = 14;
+if (firstThing === secondThing) {
 
+}
 
 
 
