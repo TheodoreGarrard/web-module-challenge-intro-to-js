@@ -80,7 +80,7 @@ Do the following:
 function multiply(a, b){
   return(a * b);
 }
-console.log(multiply(4 , 5));
+console.log(multiply());
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -145,12 +145,16 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
+
 function hungryDog(weight, age){
   if (age => 1) {
-    
-  }
-}
+   } if (weight <= 5) {
+    var feed = weight * 0.05;
+    console.log(feed)
+  } 
 
+}
+hungryDog(4, 1)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
