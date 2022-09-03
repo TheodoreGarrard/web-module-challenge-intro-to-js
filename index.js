@@ -196,21 +196,21 @@ Use the game function below to do the following:
 
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
- let RPScomp = Math.ceil(Math.random() *3);
+ //let RPScomp = Math.ceil(Math.random() *3);
 function game(user, computer){
   // sets computer choice based off number generated.
-  if (RPScomp === 1){
-    computer = "rock"
-    console.log("Computer chooses " + computer)
-  } 
-  else if (RPScomp === 2) {
-    computer = "paper"
-    console.log("Computer chooses " + computer)
-  }
-  else {
-    computer = "scissors"
-    console.log("Computer chooses " + computer)
-  }
+ // if (RPScomp === 1){
+  //  computer = "rock"
+  //  console.log("Computer chooses " + computer)
+  //} 
+  //else if (RPScomp === 2) {
+   // computer = "paper"
+   // console.log("Computer chooses " + computer)
+ // }
+  //else {
+    //computer = "scissors"
+   // console.log("Computer chooses " + computer)
+ // }
   //checks what user chooses and compares to computer, declares a tie.
   if (user === computer) {
     console.log("it's a tie")
@@ -248,7 +248,7 @@ function game(user, computer){
     }
   }
 }
-game("paper")
+game("rock", "scissors")
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -305,9 +305,10 @@ function annoyingSong(bottles){
   console.log(bottles +" bottles of soda on the wall, "+ bottles +" bottles of soda, take one down pass it around " + (bottles-1) +" bottles of soda on the wall")
   return bottles +" bottles of soda on the wall, "+ bottles +" bottles of soda, take one down pass it around " + (bottles-1) +" bottles of soda on the wall";
 }
-for (let i = annoyingSong(); i <= 1; i--){
-  annoyingSong(5)
+for (let i = 5; i > 0; i--) {
+  annoyingSong(i)
 }
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
