@@ -196,11 +196,59 @@ Use the game function below to do the following:
 
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
-
+ let RPScomp = Math.ceil(Math.random() *3);
 function game(user, computer){
-  /*add your code here*/
+  // sets computer choice based off number generated.
+  if (RPScomp === 1){
+    computer = "rock"
+    console.log("Computer chooses " + computer)
+  } 
+  else if (RPScomp === 2) {
+    computer = "paper"
+    console.log("Computer chooses " + computer)
+  }
+  else {
+    computer = "scissors"
+    console.log("Computer chooses " + computer)
+  }
+  //checks what user chooses and compares to computer, declares a tie.
+  if (user === computer) {
+    console.log("it's a tie")
+    return "it's a tie";
+  }
+  //checks and compares user vs computer and determines win/vs lose.
+  else if (user === "rock") {
+    if (computer === "paper"){
+      console.log("you lose!")
+      return "you lose!";
+    }
+    else {
+      console.log("you win!")
+      return "you win!";
+    }
+  }
+  else if (user === "paper"){
+    if (computer === "scissors"){
+      console.log("you lose!")
+      return "you lose!";
+    }
+    else {
+      console.log("you win!")
+      return "you win!";
+    }
+  }
+  else if (user === "scissors"){
+    if (computer === "rock"){
+      console.log("you lose!")
+      return "you lose!";
+    }
+    else {
+      console.log("you win!")
+      return "you win!";
+    }
+  }
 }
-
+game("paper")
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -214,9 +262,12 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(km){
+  let convertedmiles = km * 0.621371
+  console.log(km + " is " + convertedmiles + " miles.")
+  return convertedmiles;
 }
+miles(10)
 
 
 
@@ -228,10 +279,12 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  let convertedfeet = cm / 30.48;
+  console.log(cm + " is " +convertedfeet + " feet.")
+  return convertedfeet;
 }
-
+feet(160)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -247,9 +300,13 @@ Using the annoyingSong function below do the following:
 3. Outside of the function, Make a loop that invokes annoying song with a number that decreases until it gets to 1 bottle left. 
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
-
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+let bottles = 5
+function annoyingSong(bottles){
+  console.log(bottles +" bottles of soda on the wall, "+ bottles +" bottles of soda, take one down pass it around " + (bottles-1) +" bottles of soda on the wall")
+  return bottles +" bottles of soda on the wall, "+ bottles +" bottles of soda, take one down pass it around " + (bottles-1) +" bottles of soda on the wall";
+}
+for (let i = annoyingSong(); i <= 1; i--){
+  annoyingSong(5)
 }
 
 
